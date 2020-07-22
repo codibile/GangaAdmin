@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/createUserFragment">
+
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.ohho.ui.view.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ohho.ui.view.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/verifyMobileNoFragment"
+        android:name="com.ohho.ui.view.verifymobile.VerifyMobileNoFragment"
+        android:label="VerifyMobileNoFragment" />
+    <fragment
+        android:id="@+id/createUserFragment"
+        android:name="com.ohho.ui.view.createnewuser.CreateUserFragment"
+        android:label="fragment_create_user"
+        tools:layout="@layout/fragment_create_user" />
+</navigation>

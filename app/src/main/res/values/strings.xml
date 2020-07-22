@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">OHHO Passenger</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_didn_t_receive_sms">Didn\'t receive SMS?</string>
+    <string name="label_check_sms_msg">Check your SMS messages. We\'ve sent you the PIN at</string>
+    <string name="label_verify_phone_no">Verify Code</string>
+    <string name="label_name">Name</string>
+    <string name="label_appartment_name">Appartment Name</string>
+
+    <string name="label_block_no">Block No</string>
+
+    <string name="label_Floor_no">Floor No</string>
+    <string name="label_Flat_no">Flat No</string>
+    <string name="label_street_name">Street Name</string>
+    <string name="label_area_name">Area/Location Name</string>
+    <string name="label_land_mark">Land Mark</string>
+
+    <string name="label_pin_code">Pin Code</string>
+
+
+</resources>
