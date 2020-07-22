@@ -1,0 +1,67 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ohho"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:4:5-67
+11-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <application
+13-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:6:5-23:19
+14        android:allowBackup="true"
+14-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:7:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.3.0] C:\Users\V.J Vinoth\.gradle\caches\transforms-2\files-2.1\94f20d27a10319ac7cc954b79a2e42ae\core-1.3.0\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:8:9-43
+18        android:label="@string/app_name"
+18-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:9:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:10:9-54
+20        android:supportsRtl="true"
+20-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:11:9-35
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme.NoActionBar" >
+22-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:12:9-52
+23        <activity
+23-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:13:9-22:20
+24            android:name="com.ohho.MainActivity"
+24-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:14:13-41
+25            android:label="@string/app_name"
+25-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:15:13-45
+26            android:theme="@style/AppTheme.NoActionBar" >
+26-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:16:13-56
+27            <intent-filter>
+27-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:17:13-21:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:18:17-69
+28-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:18:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:20:17-77
+30-->E:\Nava Company project\OHHOPassengerApp\app\src\main\AndroidManifest.xml:20:27-74
+31            </intent-filter>
+32        </activity>
+33
+34        <provider
+34-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\V.J Vinoth\.gradle\caches\transforms-2\files-2.1\baba86cab54814236486aa2734bd9aab\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+35            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+35-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\V.J Vinoth\.gradle\caches\transforms-2\files-2.1\baba86cab54814236486aa2734bd9aab\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+36            android:authorities="com.ohho.lifecycle-process"
+36-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\V.J Vinoth\.gradle\caches\transforms-2\files-2.1\baba86cab54814236486aa2734bd9aab\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+37            android:exported="false"
+37-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\V.J Vinoth\.gradle\caches\transforms-2\files-2.1\baba86cab54814236486aa2734bd9aab\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+38            android:multiprocess="true" />
+38-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\V.J Vinoth\.gradle\caches\transforms-2\files-2.1\baba86cab54814236486aa2734bd9aab\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+39    </application>
+40
+41</manifest>
