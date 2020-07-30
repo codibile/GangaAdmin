@@ -40,7 +40,7 @@ private class HttpClientManagerImpl(
             .build()
     }
 
-    override val retrofit = Retrofit.Builder().baseUrl("https://www.evergreenn.in/api/")
+    override val retrofit = Retrofit.Builder().baseUrl("https://www.heroheroines.com/api/")
         .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
         .client(okHttpClient)
         .build()

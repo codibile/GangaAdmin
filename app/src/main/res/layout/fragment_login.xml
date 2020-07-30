@@ -10,7 +10,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="5dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/homebg_new"
         app:layout_constraintBottom_toTopOf="@+id/adView"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -44,6 +44,7 @@
                 android:text="+91" />
 
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/mobile_no"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null"

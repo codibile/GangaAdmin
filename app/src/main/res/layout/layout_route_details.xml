@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+
+    <View
+        android:id="@+id/image_view"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+android:background="@color/black"
+        />
+    <TextView
+        android:id="@+id/rounded_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>

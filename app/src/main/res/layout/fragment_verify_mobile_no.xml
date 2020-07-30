@@ -6,55 +6,71 @@
     android:layout_height="match_parent"
     android:layout_marginStart="@dimen/spacing_normal"
     android:layout_marginEnd="@dimen/spacing_normal"
-    android:layout_marginBottom="@dimen/spacing_normal"
-    >
-
+    android:background="#ffffff"
+    android:layout_marginBottom="@dimen/spacing_normal">
 
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/ibBack"
-        android:layout_width="wrap_content"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/transparent"
-        android:paddingEnd="@dimen/spacing_normal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/phone"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_dropdown"
-        android:paddingRight="@dimen/spacing_normal"
-        tools:ignore="VectorDrawableCompat" />
+
+       />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvVerifyPhone"
         style="@style/TitleTextView"
+        android:layout_marginTop="25dp"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
         android:text="@string/label_verify_phone_no"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibBack" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvPhoneSubtitle"
-        style="@style/TextViewSubTitle"
+        style="@style/TextViewSubTitle_new"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
-        android:text="@string/label_check_sms_msg"
+        android:text="Check your message and"
+        app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvVerifyPhone" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPhoneSubtitle_new"
+        style="@style/TextViewSubTitle_new"
+        android:paddingStart="0dp"
+        android:paddingLeft="0dp"
+        android:text="enter otp we just sent you"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhoneSubtitle" />
+
 
     <com.mukesh.OtpView
         android:id="@+id/OptEts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_medium"
+        android:layout_marginTop="50dp"
         android:inputType="number"
         android:textColor="@color/black"
         android:textSize="@dimen/size_20"
-        app:cursorColor="@color/app_color"
+        app:cursorColor="@color/blue"
         app:itemCount="4"
         app:itemSpacing="@dimen/spacing_small"
         app:layout_constraintEnd_toEndOf="parent"
+        android:focusable="true"
+
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvPhoneSubtitle"
@@ -73,20 +89,36 @@
         app:layout_constraintEnd_toEndOf="parent"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnVerify" />
+        app:layout_constraintTop_toBottomOf="@id/OptEts"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnVerify"
         style="@style/ConnectionButton"
+        android:layout_marginTop="50dp"
         android:background="@color/app_color"
         android:backgroundTint="@color/app_color"
         android:text="Continue"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/spacing_medium"
-
         app:cornerRadius="@dimen/spacing_medium"
-        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/OptEts" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResendOtp" />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/background"
+      />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

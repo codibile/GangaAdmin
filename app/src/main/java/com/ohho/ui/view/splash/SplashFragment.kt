@@ -5,8 +5,13 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.LifecycleObserver
+import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
+import com.mespace.data.preference.PreferenceManager
 
 import com.ohho.R
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 /**
  * A simple [Fragment] subclass.
@@ -29,6 +34,26 @@ class SplashFragment : Fragment(),LifecycleObserver {
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             window.statusBarColor = resources.getColor(R.color.app_color)
         }
-    }
 
+
+        lifecycleScope.launch {
+            delay(2000)
+            PreferenceManager(requireContext()).apply {
+                val mobileNumber = getUserId()
+                if(mobileNumber .equals(""))
+                {
+                    findNavController().navigate(R.id.loginFragment)
+
+                }
+                else
+                {
+
+                    findNavController().navigate(R.id.homePageFragment)
+
+                }
+
+            }
+        }
+
+    }
 }
